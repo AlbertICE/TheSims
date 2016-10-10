@@ -23,11 +23,26 @@ import initialize_data as i_n
 import utils
 import random
 
-def random_func(param):
+def random_attri_func(param): #随机人物属性生成字典
     random_dict = {'height':[160,190,],
                    'weight':[90,180],
+                   'status':["高兴的","沮丧的","平淡的","发奋的"],
+                   'technology':["C语言","唱歌","跳舞","Java","Python","Shell"],
+                   'job':["None","失业中","网吧网管","快递员","卖报纸"],
+                   'cash':[200,30000],
+                   'salary':[800,2000],
+                   'nationality':["中国","韩国","日本","俄罗斯","美国"],
+                   'charac':["歪瓜裂枣","长相平平","相貌端正","相貌俊俏","人中龙凤"],
+                   'strength':["四肢无力","手无缚鸡","体力正常","身体强壮","力量过人","超人来了"],
+                   'agility':[10,100],
+                   'intelligence':[160,300],
                    }
     case: param =
+
+
+def random_event_func(param):
+    random_dict = {"":}
+
 
 
 def init_data(name,sex):

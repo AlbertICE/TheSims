@@ -28,22 +28,19 @@ def random_func():
 class Human_Attr(object):
 
 
-    def __init__(self,name,age,sex,height,weight,status,technology,job,cash,salary,nationality,charac,strength,agility,intelligence): #定义人的属性
+    def __init__(self,name,age,sex,height,weight,status,technology,job,cash,salary,nationality,charac,strength,agility,intelligence,charm): #定义人的属性
         self.name = name #人物的姓名
         self.age = age #年龄
         self.sex = sex #性别
         self.height = height #身高
         self.weight = weight #体重
         self.status = status #心理状态/高兴/伤心/迷茫/......
-        self.technology =technology #技能
-        self.job = job #工作
-        self.cash = cash #存款
-        self.salary = salary #工资
         self.nationality = nationality #国籍
         self.charac = charac #人物特征
         self.strength = strength #力量
         self.agility =agility #敏捷
         self.intelligence = intelligence #智力
+        self.charm = charm #魅力值
 
 
     def talk(self):
@@ -52,6 +49,10 @@ class Human_Attr(object):
     def walk(self):
         pass
 
+        self.technology =technology #技能
+        self.job = job #工作
+        self.cash = cash #存款
+        self.salary = salary #工资
     def study(self):
         pass
 
