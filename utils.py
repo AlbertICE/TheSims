@@ -21,19 +21,10 @@ __Date__ = 10 / 8 / 16
 import time
 import random
 
-def random_func(random_event):
-    print "=====Time=====print=========================================================================================="
-    random_divisor = random.random() #随机
-    print random.random()
-
-    print time.localtime(time.time())
-    print time.strftime('%Y-%m-%d:%H-%M-%S', time.localtime(time.time()))
-
-
-
-    print "=====End======print=========================================================================================="
-
-
+def random_func():
+    random_event = ["中彩票了","的老板高兴了","的老板生气了","遇到了经济危机了","在的城市房价上涨","涨薪水了","什么也没有做","什么也没有做","生病了","什么也没有做","的心情好","的心情坏","去买衣服","什么也没有做","什么也没有做","去旅游了","去看电影了","去图书馆看书了","什么也没有做","与别人打仗了","什么也没有做","什么也没有做"]
+    print "在Albert的不明力量的影响下，" + random.choice(random_event) #打印随机事件
+    return random_event
 class Human_Attr(object):
 
 
