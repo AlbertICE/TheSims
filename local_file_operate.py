@@ -25,5 +25,5 @@ def read_data():
     # heroine = utils.Human_Attr()
     pass
 
-def save_data():
+def save_data(people,lover,opponent):
     pass

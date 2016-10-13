@@ -97,6 +97,7 @@ def charm_calc(people):
     #                'charm':random.randint(50,100)
     #                }
 
+
     print "_____DEBUG______charm_calc_result is ------------------------------->>>>>>>> ready to add base:",charm_calc_result
 
 
@@ -105,24 +106,42 @@ def charm_calc(people):
 
 def feel_check(people):
     pass
+    feel_index = 5000000
+    if people.charm >= feel_index:
+        love_feel = "爱上了你的"
+    elif people.charm >= (feel_index *0.75):
+        love_feel = "喜欢上了你的"
+    elif people.charm >= (feel_index * 0.5):
+        love_feel = "对你有好感的"
+    else:
+        love_feel = "嫌弃你的"
+
     # calc
-    return "good !"
+    return love_feel
 
 
 
 
 def print_out_message(people):
     pass
-    people.height
 
     print '''现在让我们来看看你如今的成就吧！
-    xxx到目前已经存活了xxx年。
-    经过你的不懈的努力和莫名的命运之神的干预，如今你是xxx（职业）。
-    身为xxx（国人），到也长得xxxx，体力上算是xxxx了。
-    工资也不算太少，辛辛苦苦攒了xxxx。
-    '''
-    print "目前女主人公xxx对你", feel_check(people)
+%s到目前已经存活了%s年。
+经过你的不懈的努力和莫名的命运之神的干预，如今你是%s（职业）。
+身为%s（国人），到也长得%s，体力上算是%s了。
+工资也不算太少，这几年下来辛辛苦苦攒了%s。
+'''  %(people.name,people.age, people.job[1],people.nationality[1],people.charac[1],people.strength[1],int(people.cash))
+    print "关键问题来了目前在xxx的心里，实际上是", feel_check(people) , "......"
 
+
+
+
+
+
+# def the_story_begins(people):
+#
+#     print "故事背景:\n历经十几年的努力，%s终于考试了理想的大学。\n在校期间你认识了一个让你迷醉的%s人..." \
+#           "你" %(people.name)
 
 
 
