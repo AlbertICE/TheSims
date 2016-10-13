@@ -63,16 +63,16 @@ def other_human_create(lover_sex):
 
     if lover_sex == "女":
         print "Debuging-------------------------lover is girl> "
-        lover = utils.Human_Attr()
+        lover = utils.Human_Attr(name=None,age=None,sex=None,height=None,weight=None,status=None,technology=None,job=None,cash=None,salary=None,nationality=None,charac=None,strength=None,agility=None,intelligence=None,charm=None)
         lover.name = random.choice(list1)+random.choice(list2)
         print "生成女一号的名字是",lover.name
-        opponent = utils.Human_Attr
+        opponent = utils.Human_Attr(name=None,age=None,sex=None,height=None,weight=None,status=None,technology=None,job=None,cash=None,salary=None,nationality=None,charac=None,strength=None,agility=None,intelligence=None,charm=None)
         opponent.name = random.choice(list1)+random.choice(list3)
         print "生成男反一号的名字是", opponent.name
     else:
-        lover = utils.Human_Attr
+        lover = utils.Human_Attr(name=None,age=None,sex=None,height=None,weight=None,status=None,technology=None,job=None,cash=None,salary=None,nationality=None,charac=None,strength=None,agility=None,intelligence=None,charm=None)
         lover.name = random.choice(list1)+random.choice(list3)
-        opponent = utils.Human_Attr
+        opponent = utils.Human_Attr(name=None,age=None,sex=None,height=None,weight=None,status=None,technology=None,job=None,cash=None,salary=None,nationality=None,charac=None,strength=None,agility=None,intelligence=None,charm=None)
         opponent.name = random.choice(list1)+random.choice(list2)
 
     print "debug--------------------------lover is :",lover.name, "opponent name is: ",opponent.name
@@ -120,7 +120,7 @@ def log_in():
                 print "DEBUG-------------------------------->主人公的性别是", sex
             random_ditc = random_attri_func() #返回人物属性的一个随机字典
             # 实例化主人公
-            protagonist = utils.Human_Attr
+            protagonist = utils.Human_Attr(name=None,age=None,sex=None,height=None,weight=None,status=None,technology=None,job=None,cash=None,salary=None,nationality=None,charac=None,strength=None,agility=None,intelligence=None,charm=None)
 
             # 在random_dict中取得主人公的属性
             protagonist.name = name
